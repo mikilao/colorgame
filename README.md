@@ -1,6 +1,11 @@
 # colorgame
 Color Matching Game
-
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color Game</title>
+	<link rel="stylesheet" type="text/css" href="Colorgame.css">
+	<script>
 var colors = [];
 var numOfSquares = 6;
 var squares = document.querySelectorAll(".square");
@@ -171,5 +176,31 @@ function randomColor() {
 	//pick a "blue" from 0 - 255
 	var b = Math.floor(Math.random() * 256);
 	return "rgb(" + r + ", " + g + ", " + b + ")";
-}
+}</script>
+
+</head>
+<body>
+	<h1>The Great
+	 <br>
+		<span id= "colorDisplay">Color</span> 
+		<br>Guessing Game</h1>
+<div id="stripe">
+	<button id="reset">New Colors</button>
+	<span id= "message"></span>
+	<button class= "mode">Easy</button>
+	<button class = "mode selected">Hard</button>
+				
+	</div>
+
+<div id="container">
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+	<div class="square"></div>
+</div>
+<script type="text/javascript" src="colorgame.js"></script>
+</body>
+</html>
 
